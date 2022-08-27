@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,34 +18,33 @@
     <meta charset="utf-8" />
   </head>
   <body>
-    <!-- <test></test> -->
-    </test>
-    <header class="nav-menu">
-      <a class="logo" href="index.html"
-        >Web<span class="logo-studio">Studio</span></a
-      >
-      <nav class="nav">
-        <ul>
-          <li><a class="navigation" href="/agencja">Agencja</a></li>
-          <li>
+    <header class="nav-menu container">
+      <a class="logo-top" href="index.html">Web<span>Studio</span></a>
+
+      <nav class="flex-nav">
+        <ul class="nav">
+          <li class="li-nav">
+            <a class="navigation" href="/agencja">Agencja</a>
+          </li>
+          <li class="li-nav">
             <a class="navigation" href="portfolio.html">Portfolio</a>
           </li>
           <li><a class="navigation" href="/kontakt">Kontakt</a></li>
         </ul>
-      </nav>
 
-      <ul class="nav">
-        <li>
-          <a class="top-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="top-contact" href="tel:+48111111111">+48 111 111 111</a>
-        </li>
-      </ul>
+        <ul class="flex-parent">
+          <li class="li-contact">
+            <a class="top-contact1" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="li-contact">
+            <a class="top-contact" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <main class="container">
       <section class="main">
         <h1 class="headline">
           EFEKTYWNE ROZWIĄZANIA<br />
@@ -53,8 +55,8 @@
         </button>
       </section>
 
-      <section>
-        <ul>
+      <section class="container">
+        <ul class="assets">
           <li>
             <h3 class="assets-h">LOREM IPSUM</h3>
             <p class="assets-p">
@@ -63,7 +65,7 @@
             </p>
           </li>
 
-          <li>
+          <li class>
             <h3 class="assets-h">LOREM IPSUM</h3>
             <p class="assets-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -87,10 +89,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="container">
         <h2 class="main-h">Czym się zajmujemy</h2>
-        <ul>
-          <li>
+        <ul class="main-cointainer">
+          <li class="main-img">
             <img
               src="images/img1.jpg"
               alt="programowanie"
@@ -98,7 +100,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="main-img">
             <img
               src="images/img2.jpg"
               alt="projektowanie"
@@ -117,10 +119,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="background-main container">
         <h2 class="main-h">Nasz zespół</h2>
-        <ul>
-          <li>
+        <ul class="team-container">
+          <li class="team-li">
             <img
               src="images/person1.jpg"
               alt="Mężczyzna"
@@ -131,7 +133,7 @@
             <span class="job">Product Designer</span>
           </li>
 
-          <li>
+          <li class="team-li">
             <img
               src="images/person2.jpg"
               alt="Kobieta"
@@ -142,7 +144,7 @@
             <span class="job">Frontend Developer</span>
           </li>
 
-          <li>
+          <li class="team-li">
             <img
               src="images/person3.jpg"
               alt="Mężczyzna"
@@ -153,7 +155,7 @@
             <span class="job">Marketing</span>
           </li>
 
-          <li>
+          <li class="team-li">
             <img
               src="images/person4.jpg"
               alt="Mężczyzna"
@@ -167,12 +169,12 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
       <a class="logo" href="index.html"
         >Web<span class="logo-bottom">Studio</span></a
       >
       <address>
-        <ul>
+        <ul class="footer-items">
           <li class="address-bottom">m. Warszawa, Aleje Jerozolimskie 21</li>
           <li>
             <a class="contact-bottom" href="mailto:info@example.com">
