@@ -50,7 +50,6 @@ body {
   line-height: 1.19;
   color: var(--h-color);
   display: flex;
-  flex-direction: row;
   padding: 24px 0px 25px 0px;
 }
 .logo > span {
@@ -146,9 +145,9 @@ body {
 .main {
   background: #2f303a;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 200px 0;
 }
 
@@ -228,7 +227,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-left: 215px;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .assets-h {
@@ -364,7 +370,7 @@ body {
   margin-left: 215px;
 }
 
-.logo-bottom {
+.logo > span {
   color: var(--semi-text-color);
   line-height: 1.19;
 }
