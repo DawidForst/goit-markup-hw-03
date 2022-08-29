@@ -56,7 +56,7 @@ body {
 .logo > span {
   align-items: center;
   display: flex;
-  max-width: 145px;
+  color: var(--h-color);
 }
 
 .logo-top {
@@ -64,41 +64,38 @@ body {
   font-weight: 700;
   font-size: 26px;
   align-items: center;
-
   letter-spacing: 0.03em;
   color: var(--hover-links-color);
-  display: flex;
   margin-left: auto;
 }
-.logo > span {
-  color: var(--h-color);
+.logo-top > span {
+  color: black;
 }
+
 .flex-nav {
   display: flex;
-  max-width: 254px;
   /* padding: 32px 0; */
-  margin-left: auto;
+  margin-left: 93px;
   justify-content: space-between;
 }
 
-.li-nav {
+.li-nav > a:not(last-child) {
   padding-right: 46px;
 }
 
 .flex-parent {
   display: flex;
   align-items: center;
-  border: solid red;
-  margin-left: auto;
+  /* border: solid red; */
+  margin-left: 271px;
 }
 
 .nav {
   line-height: 1.14;
   display: flex;
   align-items: center;
-  max-width: 254px;
   justify-content: space-between;
-  border: solid black;
+  /* margin-left: 93px; */
 }
 .navigation {
   font-weight: 500;
@@ -130,7 +127,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--p-color);
   margin-left: auto;
-  padding-left: 30px;
 }
 .top-contact {
   width: 115px;
@@ -169,25 +165,31 @@ body {
 }
 
 .button {
-  width: 93px;
+  width: 121px;
   height: 38px;
-}
-
-.button > span {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  letter-spacing: 0.03em;
+  border: none;
+  padding: 6px 22px;
   background: var(--button-color);
-  color: var(--h-color);
+  align-content: center;
+  margin-right: 8px;
+  font-weight: 500;
 }
 
-.button :hover {
+.buttons-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin-left: 532px; */
+  padding-right: 30px;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.button:hover {
   cursor: pointer;
   color: var(--semi-text-color);
   background-color: var(--hover-links-color);
   /* shadow-middle */
-  border: none;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -206,6 +208,11 @@ body {
 
 .button-main :hover {
   cursor: pointer;
+  color: var(--hover-links-color);
+}
+
+.buttons-container :hover {
+  cursor: pointer;
 }
 
 .button-main > span {
@@ -218,10 +225,10 @@ body {
 }
 
 .assets {
-  max-width: 1170px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-left: 215px;
 }
 
 .assets-h {
@@ -237,24 +244,41 @@ body {
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
-
+  padding-right: 30px;
+  padding-top: 10px;
   letter-spacing: 0.03em;
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 215px;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
 .portfolio-h {
+  display: flex;
   font-size: 18px;
   letter-spacing: 0.06em;
   line-height: 2;
   color: var(--h-color);
+  text-align: center;
+  justify-content: center;
+  /* padding: 20px 24px 54px 24px; */
 }
 
 .portfolio-description {
   font-size: 16px;
   line-height: 1.875;
   /* identical to box height, or 188% */
+  flex-basis: calc((100% - 60px) / 3);
 
   letter-spacing: 0.03em;
-
+  text-align: center;
   color: var(--p-color);
 }
 
@@ -265,7 +289,7 @@ body {
 .main-h {
   display: flex;
   justify-content: center;
-  align-items: center;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -275,21 +299,20 @@ body {
 
 .main-cointainer {
   display: flex;
-  max-width: 1170px;
-  align-items: center;
+  justify-content: center;
 }
 
 .main-img {
   padding-right: 30px;
   padding-top: 50px;
+  display: flex;
 }
 
 .team-container {
-  max-width: 1170px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding-top: 50px;
+  padding-right: 30px;
 }
 .team-li {
   display: flex;
@@ -297,6 +320,7 @@ body {
   align-items: center;
   background-color: white;
   padding-bottom: 30px;
+  padding-right: 30px;
 }
 
 .name {
@@ -324,25 +348,20 @@ body {
   background: #2f303a;
   color: var(--semi-text-color);
   padding: 60px 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .footer-items {
-  flex-direction: flex;
-  align-items: flex-start;
-  margin-left: auto;
+  margin-left: 215px;
 }
 .logo {
+  display: flex;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   align-items: center;
   letter-spacing: 0.03em;
   color: var(--hover-links-color);
-  display: flex;
-
-  margin-left: auto;
+  margin-left: 215px;
 }
 
 .logo-bottom {
@@ -355,8 +374,6 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.17;
   color: var(--semi-text-color);
-
-  align-items: flex-start;
 }
 
 .contact-bottom {
@@ -366,7 +383,6 @@ body {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-  margin-left: auto;
 }
 .contact-bottom:hover {
   color: var(--hover-links-color);

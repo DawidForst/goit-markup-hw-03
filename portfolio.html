@@ -18,53 +18,59 @@
     <meta charset="utf-8" />
   </head>
   <body>
-    <header class="nav-menu">
+    <header class="container nav-menu">
       <a class="logo" href="index.html"
         >Web<span class="logo-studio">Studio</span></a
       >
-      <nav>
-        <ul>
-          <li><a class="navigation" href="/agencja">Agencja</a></li>
-          <li><a class="navigation" href="portfolio.html">Portfolio</a></li>
-          <li><a class="navigation" href="/kontrakt">Kontakt</a></li>
+      <nav class="flex-nav">
+        <ul class="nav">
+          <li class="li-nav">
+            <a class="navigation" href="/agencja">Agencja</a>
+          </li>
+          <li class="li-nav">
+            <a class="navigation" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="li-nav">
+            <a class="navigation" href="/kontrakt">Kontakt</a>
+          </li>
         </ul>
       </nav>
 
-      <ul>
-        <li>
-          <a class="top-contact" href="mailto:info@devstudio.com"
+      <ul class="flex-parent">
+        <li class="li-contact">
+          <a class="top-contact1" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="li-contact">
           <a class="top-contact" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>
     </header>
 
     <main>
-      <section>
-        <ul>
-          <li class="button">
-            <button type="button"><span>Wszystkie</span></button>
+      <section class="section">
+        <ul class="buttons-container">
+          <li>
+            <button type="button" class="button">Wszystkie</button>
           </li>
-          <li class="button">
-            <button type="button"><span>Strony</span></button>
+          <li>
+            <button type="button" class="button">Strony</button>
           </li>
-          <li class="button">
-            <button type="button"><span>Aplikacje</span></button>
+          <li>
+            <button type="button" class="button">Aplikacje</button>
           </li>
-          <li class="button">
-            <button type="button"><span>Dizajn</span></button>
+          <li>
+            <button type="button" class="button">Dizajn</button>
           </li>
-          <li class="button">
-            <button type="button"><span>Marketing</span></button>
+          <li>
+            <button type="button" class="button">Marketing</button>
           </li>
         </ul>
       </section>
 
-      <section>
-        <ul>
+      <section class="section container">
+        <ul class="card-set">
           <li class="portfolio-description">
             <img
               src="images/portfolio1.jpg"
@@ -171,10 +177,18 @@
         >Web<span class="logo-bottom">Studio</span></a
       >
       <address>
-        <ul>
-          <li class="adress-bottom">m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li class="contact-bottom">info@example.com</li>
-          <li class="contact-bottom">+48 111 111 111</li>
+        <ul class="footer-items">
+          <li class="address-bottom">m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li>
+            <a class="contact-bottom" href="mailto:info@example.com">
+              info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="contact-bottom" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
