@@ -107,12 +107,12 @@ body {
   padding-right: 46px;
 }
 
-.flex-parent {
+/* .flex-parent {
   display: flex;
   align-items: center;
-  /* border: solid red; */
+
   margin-left: 271px;
-}
+} */
 
 .nav {
   line-height: 1.14;
