@@ -5,6 +5,11 @@
   --hover-links-color: #2196f3;
   --semi-text-color: #ffffff;
 }
+
+img {
+  display: block;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -291,11 +296,19 @@ body {
   letter-spacing: 0.06em;
   line-height: 2;
   color: var(--h-color);
-  text-align: center;
-  justify-content: center;
-  /* padding: 20px 24px 54px 24px; */
+  text-align: left;
+  justify-content: left;
+  padding-left: 24px;
+  padding-top: 20px;
 }
-
+.portfolio-p {
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-top: 4px;
+}
 .icon-border {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -312,9 +325,6 @@ body {
   text-align: center;
   color: var(--p-color);
   background: #ffffff;
-}
-.test {
-  border-bottom: solid 1px #ececec;
 }
 
 .background-main {
@@ -417,6 +427,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: var(--hover-links-color);
+  padding-bottom: 20px;
 }
 
 .logo > span {
@@ -430,9 +441,26 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.17;
   color: var(--semi-text-color);
+  padding-bottom: 9px;
 }
 
 .contact-bottom {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+  padding-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-bottom:hover {
+  color: var(--hover-links-color);
+  cursor: pointer;
+}
+
+.phone-bottom {
+  padding-top: 9px;
   font-size: 14px;
   line-height: 1.17;
 
@@ -440,7 +468,7 @@ body {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.contact-bottom:hover {
+.phone-bottom:hover {
   color: var(--hover-links-color);
   cursor: pointer;
 }
