@@ -37,7 +37,16 @@ body {
   color: var(--p-color);
 }
 
+.container-top {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
+}
 .container {
+  /* display: flex; */
   max-width: 1200px;
   width: 100%;
   padding: 0 15px;
@@ -65,6 +74,7 @@ body {
   color: var(--h-color);
   display: flex;
   padding: 24px 0px 25px 0px;
+  border-bottom: solid 1px #ececec;
 }
 .logo > span {
   align-items: center;
@@ -80,7 +90,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: var(--hover-links-color);
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 .logo-top > span {
   color: black;
@@ -129,8 +139,10 @@ body {
 
 .li-contact {
   display: flex;
+  gap: 50px;
   align-items: center;
   padding-right: 50px;
+  margin-left: auto;
 }
 
 .top-contact1 {
@@ -405,7 +417,7 @@ body {
   align-items: center;
   font-size: 16px;
   line-height: 1.875;
-
+  padding-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -437,7 +449,7 @@ body {
 }
 .address-bottom {
   font-size: 14px;
-
+  font-style: normal;
   letter-spacing: 0.03em;
   line-height: 1.17;
   color: var(--semi-text-color);
@@ -446,6 +458,7 @@ body {
 
 .contact-bottom {
   display: flex;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.17;
 
