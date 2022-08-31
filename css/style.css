@@ -45,6 +45,9 @@ body {
   padding-bottom: 94px;
 }
 
+.main-section {
+}
+
 .section-portfolio {
   padding-top: 50px;
   padding-bottom: 94px;
@@ -185,6 +188,7 @@ body {
   align-items: center;
   /* justify-content: space-between; */
   /* margin-left: 532px; */
+  padding-top: 94px;
   padding-right: 30px;
   justify-content: center;
   margin-left: auto;
@@ -236,8 +240,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-left: 215px;
 }
 
 .button-li {
@@ -294,15 +296,25 @@ body {
   /* padding: 20px 24px 54px 24px; */
 }
 
+.icon-border {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 .portfolio-description {
   font-size: 16px;
   line-height: 1.875;
+  /* border: 1px solid #eeeeee; */
   /* identical to box height, or 188% */
   flex-basis: calc((100% - 60px) / 3);
 
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--p-color);
+  background: #ffffff;
+}
+.test {
+  border-bottom: solid 1px #ececec;
 }
 
 .background-main {
@@ -318,6 +330,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--h-color);
+  padding-bottom: 50px;
 }
 
 .main-cointainer {
@@ -328,7 +341,9 @@ body {
 .main-img {
   padding-right: 30px;
   padding-top: 50px;
+  padding-bottom: 94px;
   display: flex;
+  gap: 30px;
 }
 
 .main-img-last {
@@ -338,16 +353,22 @@ body {
 
 .team-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding-top: 50px;
+  gap: 30px;
 }
+
 .team-li {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  padding-bottom: 30px;
-  padding-right: 30px;
+
+  /* padding-bottom: 30px;
+  padding-right: 30px; */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-li-last {
@@ -385,9 +406,9 @@ body {
   padding: 60px 0;
 }
 
-.footer-items {
+/* .footer-items {
   margin-left: 215px;
-}
+} */
 .logo {
   display: flex;
   font-family: "Raleway";
